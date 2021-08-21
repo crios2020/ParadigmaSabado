@@ -1,0 +1,54 @@
+Curso: Introducción al paradigma de la programación orientada a objetos 9hs
+Días: Sábados 10:00 a 13:00 hs
+Profe: Carlos Ríos	carlos.rios@educacionit.com
+
+Materiales:		alumni.educacionit.com
+			user: email
+			pass: dni
+			
+	github: https://github.com/crios2020/ParadigmaSabado
+	
+
+# Ejemplo en Python
+class Auto():
+
+	#atributos
+	marca = ''
+	modelo = ''	
+	color = ''
+	velocidad = 0
+	
+	#métodos
+	def acelerar():
+		self.velocidad=self.velocidad+10
+		
+	def frenar():
+		self.velocidad=self.velocidad-10
+
+print('Hola Mundo!')
+auto1 = Auto()
+auto1.marca='Fiat'
+
+
+//Ejemplo javaScript
+class Auto{
+	var marca=''
+	var modelo=''
+	var color=''
+	var velocidad=0
+	
+	function acelerar(){
+		velocidad=velocidad+10
+	}
+	
+	function frenar(){
+		velocidad=velocidad-=
+	}
+}//end class
+
+Document.write('Hola mundo!')
+auto1= new Auto()
+auto1.marca='Fiat'
+ 
+//pendiente mostrar código de valor retornado
+	
