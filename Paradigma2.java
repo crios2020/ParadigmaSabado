@@ -1,6 +1,10 @@
 public class Paradigma2 {
     public static void main(String[] args) {
 
+
+        // Pendiente Class Program
+
+
         //Objeto Mock (Objeto Simulado)
         System.out.println("-- cuenta1 --");
         Cuenta cuenta1=new Cuenta(1,"arg$");
@@ -19,6 +23,8 @@ public class Paradigma2 {
         cliente1.getCuenta().depositar(120000);
 
         System.out.println(cliente1.getEstado());
+
+        //Cliente clienteX=new Cliente();
 
     }
 } //end class Paradigma2
@@ -55,12 +61,33 @@ class Cliente{
     private int nro;
     private String nombre;
     private Cuenta cuenta;
+    private int edad;
+    private String tipo;
 
     public Cliente(int nro, String nombre, int nroCuenta){
         this.nro=nro;
         this.nombre = nombre;
         this.cuenta = new Cuenta(nroCuenta,"arg$");
     }
+    
+    public Cliente(int nro, String nombre, int nroCuenta, int edad){
+        this.nro=nro;
+        this.nombre = nombre;
+        this.cuenta = new Cuenta(nroCuenta,"arg$");
+        this.edad = edad;
+    }
+    
+    public void comprar(){
+		if(tipo=="mayorista"){
+			//mayorista
+		}
+		if(tipo=="minorista"){
+			//minorista
+		}
+		if(tipo=="turista"){
+			//turista
+		}
+	}
 
     public Cuenta getCuenta(){
         return cuenta;

@@ -39,7 +39,7 @@ public class Paradigma {
 		System.out.println(texto.toUpperCase());
 
 		Auto auto3=new Auto();
-		
+		auto2.acelerar();
 
 	} // end main
 }// end class Paradigma
